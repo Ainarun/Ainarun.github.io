@@ -206,7 +206,7 @@ nav ul {
 
 /* PORTFOLIO */
 
-.main {
+#portfolio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,24 +274,67 @@ nav ul {
 
 /* A PROPOS */
 
-.apropos {
+#apropos {
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: larger;
 }
 
 /* CONTACT */
 
-.contact {
+#contact {
   height: 70vh;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
+  background-color: var(--white-color);
+  color: var(--black);
+}
+  .formulaire {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin-left: 10px;
+}
+.formulaire input {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.formulaire textarea {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.formulaire input.send {
+  width: 50%;
+  border-radius: 5px;
+}
+.adresse {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: larger;
+  flex-basis: 50%;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact h4 {
+  margin: 0px;
+}
+.creseau {
+  display: flex;
+  flex-basis: 33%;
+}
+.creseau ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
 }
 
 /* FOOTER */
@@ -299,7 +342,9 @@ nav ul {
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 10vh;
+  background-color: var(--black);
 }
 
 /* @media screen and (min-width: 800px) {
