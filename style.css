@@ -5,12 +5,12 @@
   --white-color: #FFF;
   --soft-dark: #5E5E5E;
   --black: #0a0a0a;
+  --green: #1f9442;
 }
 body {
   margin: 0px;
   padding: 0px;
-  background-color: var(--soft-dark);
-  color: var(--white-color);
+  color: var(--black);
   font-family: 'Bebas Neue', cursive;
 }
 li {
@@ -49,6 +49,7 @@ position: relative;
   width: 100vw;
   position: absolute;
   opacity: 0.5;
+  /* permet de mettre un fond dégradé pour faire ressortir le texte */
 }
 
 /* MENU HAMBURGER */
@@ -78,6 +79,11 @@ position: relative;
   /* height: 26px; */
   cursor: pointer;
   z-index: 1;
+}
+#main .menu__btn > span,
+#main .menu__btn > span::before,
+#main .menu__btn > span::after {
+  background-color: #080808;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -196,7 +202,6 @@ nav ul {
 /* INDEX CONTENT */
 
 .slogan {
-  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,6 +217,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   font-size: larger;
+  background-color: var(--white-color);
 }
 .portfolio {
   display: flex;
@@ -263,19 +269,17 @@ nav ul {
 
 /* SERVICES */
 
-.services {
-  height: 70vh;
+#services {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: larger;
+  background-color: var(--green);
 }
 
 /* A PROPOS */
 
 #apropos {
-  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -285,12 +289,9 @@ nav ul {
 /* CONTACT */
 
 #contact {
-  height: 70vh;
   display: flex;
   flex-direction: row;
-  /* justify-content: center;
-  align-items: center; */
-  background-color: var(--white-color);
+  background-color: var(--light-grey);
   color: var(--black);
 }
   .formulaire {
@@ -340,6 +341,12 @@ nav ul {
 /* FOOTER */
 
 .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+#main .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
