@@ -207,6 +207,8 @@ nav ul {
   justify-content: center;
   align-items: center;
   font-size: larger;
+  height: 70vh;
+  color: var(--white-color);
 }
 
 /* PORTFOLIO */
