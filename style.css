@@ -306,15 +306,18 @@ nav ul {
   width: 100%;
   border-radius: 5px;
   margin-top: 5px;
+  outline:none;
 }
 .formulaire textarea {
   width: 100%;
   border-radius: 5px;
   margin-top: 5px;
+  outline:none;
 }
 .formulaire input.send {
   width: 50%;
   border-radius: 5px;
+  outline:none;
 }
 .adresse {
   display: flex;
@@ -355,6 +358,33 @@ nav ul {
   height: 10vh;
   background-color: var(--black);
 }
+
+/* Pages Realisations */
+
+#comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--black);
+}#screen a {
+  color: var(--black);
+}
+
+#screen a img {
+  display: flex;
+  align-items: center;
+  border: solid 2px;
+  border-radius: 5px;
+  width: 1000px;
+}
+
 
 /* @media screen and (min-width: 800px) {
   nav {
