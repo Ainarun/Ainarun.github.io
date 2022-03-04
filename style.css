@@ -221,6 +221,12 @@ nav ul {
   font-size: larger;
   background-color: var(--white-color);
 }
+#portfolio p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .portfolio {
   display: flex;
   min-width: 600px;
@@ -276,7 +282,14 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--green);
+  background-color: var(--black);
+  color: var(--white-color);
+}
+#services p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* A PROPOS */
@@ -286,6 +299,8 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--black);
+  color: var(--white-color);
 }
 
 /* CONTACT */
@@ -307,6 +322,7 @@ nav ul {
   border-radius: 5px;
   margin-top: 5px;
   outline:none;
+  height: 30px;
 }
 .formulaire textarea {
   width: 100%;
