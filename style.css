@@ -1,5 +1,7 @@
 /* GLOBAL CSS */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 :root{
   --light-grey: #FAF8F8;
   --white-color: #FFF;
@@ -11,7 +13,7 @@ body {
   margin: 0px;
   padding: 0px;
   color: var(--black);
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 li {
   font-size: 20px;
@@ -211,28 +213,67 @@ nav ul {
   color: var(--white-color);
 }
 
-/* PORTFOLIO */
+/* A PROPOS */
 
-#portfolio {
+#apropos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: larger;
-  background-color: var(--white-color);
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-#portfolio p {
+.aproposcontenu {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+  height: 400px;
+}
+.aproposimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white-color);
+  height: 400px;
+  flex-basis: 50%;
+}
+.aproposimg img {
+width: 40px;
+height: 350px;
+padding: 20px;
+}
+.apropostxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--white-color);
+  color: var(--black);
+  height: 400px;
+  flex-basis: 50%;
+}.apropostxt p {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+/* PORTFOLIO */
+
+#portfoliocontener {
+  display: flex;
+  width: 100%;
+  height: 400px;
 }
 .portfolio {
   display: flex;
   min-width: 600px;
   max-width: 900px;
   height: 400px;
-  margin: 4rem auto;
+  margin: 10px;
+  flex-basis: 50%;
 }
 .image {
   min-width: 60px;
@@ -274,6 +315,19 @@ nav ul {
   transform: translateY(0px);
   opacity: 1;
 }
+.portfoliotxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white-color);
+  flex-basis: 50%;
+}
+.portfoliotxt p {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
 
 /* SERVICES */
 
@@ -282,34 +336,54 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--black);
-  color: var(--white-color);
+  background-color: var(--white-color);
+  color: var(--black);
+  margin: 60px 0 60px 0;
 }
-#services p {
+.serviceslist {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
-
-/* A PROPOS */
-
-#apropos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--black);
-  color: var(--white-color);
+.serviceslist img {
+  width: 50px;
+  height: 50px;
+}
+.realisations {
+  margin: 10px;
+  border: solid 2px var(--black) ;
+  border-radius: 5px;
+  flex-basis: 33%;
+}
+.hebergement {
+  margin: 10px;
+  border: solid 2px var(--black) ;
+  border-radius: 5px;
+  flex-basis: 33%;
+}
+.referencement {
+  margin: 10px;
+  border: solid 2px var(--black) ;
+  border-radius: 5px;
+  flex-basis: 33%;
 }
 
 /* CONTACT */
 
 #contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--light-grey);
   color: var(--black);
+}
+.contactbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
   .formulaire {
   display: flex;
@@ -322,13 +396,14 @@ nav ul {
   border-radius: 5px;
   margin-top: 5px;
   outline:none;
-  height: 30px;
+  height: 60px;
 }
 .formulaire textarea {
   width: 100%;
   border-radius: 5px;
   margin-top: 5px;
   outline:none;
+  min-height: 80px;
 }
 .formulaire input.send {
   width: 50%;
