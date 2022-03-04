@@ -355,18 +355,21 @@ padding: 20px;
   margin: 10px;
   border: solid 2px var(--black) ;
   border-radius: 5px;
+  height: 300px;
   flex-basis: 33%;
 }
 .hebergement {
   margin: 10px;
   border: solid 2px var(--black) ;
   border-radius: 5px;
+  height: 300px;
   flex-basis: 33%;
 }
 .referencement {
   margin: 10px;
   border: solid 2px var(--black) ;
   border-radius: 5px;
+  height: 300px;
   flex-basis: 33%;
 }
 
@@ -384,6 +387,7 @@ padding: 20px;
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 20px;
 }
   .formulaire {
   display: flex;
