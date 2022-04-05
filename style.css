@@ -5,7 +5,7 @@
 :root{
   --light-grey: #FAF8F8;
   --white-color: #FFF;
-  --soft-dark: #5E5E5E;
+  --soft-dark: #7b7171;
   --black: #0a0a0a;
   --green: #1f9442;
 }
@@ -260,7 +260,8 @@ padding: 20px;
 }.apropostxt p {
   display: flex;
   align-items: center;
-  padding: 20px;
+  margin: 0px;
+  padding: 10px;
 }
 
 /* PORTFOLIO */
@@ -402,20 +403,34 @@ padding: 20px;
   width: 100%;
   border-radius: 5px;
   margin-top: 5px;
+  padding-left: 10px;
   outline:none;
   height: 60px;
+  border-style: none;
+  background: var(--soft-dark);
+  color: var(--white-color);
 }
 .formulaire textarea {
   width: 100%;
   border-radius: 5px;
+  background: var(--soft-dark);
+  padding-left: 10px;
+  color: var(--white-color);
   margin-top: 5px;
   outline:none;
   min-height: 80px;
+  border-style: none;
+  font-family: 'Montserrat', sans-serif;
 }
 .formulaire input.send {
   width: 50%;
   border-radius: 5px;
+  background: var(--black);
+  color: var(--white-color);
   outline:none;
+  cursor: pointer;
+  border-style: none;
+  font-family: 'Montserrat', sans-serif;
 }
 .adresse {
   display: flex;
